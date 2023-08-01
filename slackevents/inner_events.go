@@ -15,7 +15,7 @@ type EventsAPIInnerEvent struct {
 // AppMentionEvent is an (inner) EventsAPI subscribable event.
 type AppMentionEvent struct {
 	// Basic Message Event - https://api.slack.com/events/message
-	ClientMsgID     string `json:"client_msg_id"`
+	ClientMsgID     string `json:"client_msg_id,omitempty"`
 	Type            string `json:"type"`
 	User            string `json:"user"`
 	Text            string `json:"text"`
